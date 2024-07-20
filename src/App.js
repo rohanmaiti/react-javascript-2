@@ -16,6 +16,12 @@ import Life_cycle_01 from './LifeCycle/lifeCycle_01';
 
 import Ques_01 from './questions/ques_01';
 import Ques_02 from "./questions/ques_02"
+
+import Counter from './Components/func_04_state';
+import Input from './Components/Func_05';
+
+import Todo from './todo/todoComponent/input';
+
 function App() {
   return (
     <div className="App">
@@ -50,7 +56,13 @@ function App() {
        {/* <Life_cycle_01/> */}
 
        {/* <Ques_01/> */}
-       <Ques_02/>
+       {/* <Ques_02/> */}
+
+       {/* use state  hook */}
+       {/* <Counter/> */}
+       {/* <Input/> */}
+
+       <Todo/>
     </div>
   );
 }
