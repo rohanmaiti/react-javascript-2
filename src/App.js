@@ -66,9 +66,9 @@ function App() {
        {/* <Input/> */}
 
        {/* styling  */}
-       <Css/>
+       {/* <Css/> */}
 
-       {/* <Todo/> */}
+       <Todo/>
     </div>
   );
 }
