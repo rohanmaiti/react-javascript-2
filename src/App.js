@@ -20,7 +20,10 @@ import Ques_02 from "./questions/ques_02"
 import Counter from './Components/func_04_state';
 import Input from './Components/Func_05';
 
+import Css from './Components/Func_06_css';
+
 import Todo from './todo/todoComponent/input';
+
 
 function App() {
   return (
@@ -61,7 +64,11 @@ function App() {
        {/* use state  hook */}
        {/* <Counter/> */}
        {/* <Input/> */}
-       <Todo/>
+
+       {/* styling  */}
+       <Css/>
+
+       {/* <Todo/> */}
     </div>
   );
 }
