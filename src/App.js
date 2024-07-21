@@ -61,7 +61,6 @@ function App() {
        {/* use state  hook */}
        {/* <Counter/> */}
        {/* <Input/> */}
-
        <Todo/>
     </div>
   );
