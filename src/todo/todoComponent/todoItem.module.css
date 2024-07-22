@@ -1,12 +1,36 @@
-.parent{
-    width: 500px;
+ .parent{
+    width: 550px;
     margin: auto;
-    border: 1px solid black;
-}
-.parent div{
-    border: 1px solid black;
-    width: 300px;
-    height: 40px;
-    text-align: center;
+    /* border: 1px solid rgb(255, 0, 0); */
+    /* text */
+ } 
+.first_child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid rgb(47, 255, 0);
+    width: 500px;
+    height: 30px;
     font-size: 25px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    color:rgb(0, 0, 0);
+    background-color: rgb(255, 252, 95);
+    box-shadow: 0 4px 6px rgb(43, 43, 43);
+
 }
+
+ .second_child{
+    display: flex;
+    justify-content: space-around;
+    width:150px;
+    height: 30px;
+    border:1px solid rgb(144, 144, 144);
+ }
+ 
+ .button{
+ width: 50px;
+ height: 25px;
+ border-radius: 5px;
+ }
