@@ -3,7 +3,7 @@ import {Routes, Route } from "react-router-dom"
 export const Home = () => {
   return (
     <>
-    <div>Home</div>
+    <h2>Home Page</h2>
    
     </>
   )
