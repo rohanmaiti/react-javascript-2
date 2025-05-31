@@ -26,7 +26,7 @@ class Form extends Component{
             <textarea            id="area"   placeholder="Enter your thoughts"></textarea> <br/>
             <div>
             <label for='year'> Select year </label> 
-            <select value={this.state.select}>
+            <select value={this.state.select} onChange={(e)=>{this.setState({select:e.target.value})}} >
             <option  > ----- </option>
             <option value="1st" > 1st </option>
             <option value="2nd" > 2nd </option>

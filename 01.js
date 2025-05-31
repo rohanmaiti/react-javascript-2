@@ -1,0 +1,11 @@
+setInterval(()=>{
+    console.log("Rohan");
+},1000)
+setTimeout(()=>{
+    console.log("hii");
+},3000)
+console.log("TTT");
+setTimeout(()=>{
+    console.log("hello");
+},2000)
+console.log("END");

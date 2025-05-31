@@ -11,6 +11,7 @@ import Click from './Components/Func_03_evntHndl';
 import ClassComp06 from './Components/Class_06';
 import Form from './Components/Form_07';
 import From_08 from './Components/Form_08';
+import Form_Image from './Components/Form_img_09';
 
 import Life_cycle_01 from './LifeCycle/lifeCycle_01';
 
@@ -24,8 +25,23 @@ import Css from './Components/Func_06_css';
 
 import Todo from './todo/todoComponent/input';
 
+// learing useContext hook
+import { Dashboard } from './useContextHook/Dashboard';
 
+// learning Routes
+import { Router , Routes, Route } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
+
+import { Home } from './Routing/Home';
+import { About } from './Routing/About';
+import { Profile } from './Routing/Profile';
+import { User } from './Routing/User';
+import { Dashboard2 } from './Routing/Dashboard2';
 function App() {
+  const flexStyle = {
+    "display":"flex",
+    "gap":"10px"
+  }
   return (
     <div className="App">
       {/* <Heading/> */}
@@ -68,7 +84,36 @@ function App() {
        {/* styling  */}
        {/* <Css/> */}
 
-       <Todo/>
+       {/* <Todo/> */}
+
+       {/* <Form_Image/> */}
+       {/* Learing useContext() and createContext() START*/}
+       {/* <Dashboard/> */}
+       {/* Learing useContext() and createContext() ENDS*/}
+
+       {/* Learing Routes START */}
+       <div style={flexStyle} >
+        <Link to="/home" >Home</Link>
+        <Link to="/about" >About</Link>
+        <Link to="/profile" >Profile</Link>
+        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About/>}/>
+          <Route path="/profile" element={<Profile/>}/>
+          <Route path="*" element={<h1>404 Page not found</h1>}/>
+          {/* dynamic routing */}
+          <Route path="/user/:id" element={<User/>}/>
+          {/* Navigate */}
+          <Route path="/homepage" element={<Navigate to="/home"/>}/>
+          {/* nested routing */}
+          <Route path="/dashboard/*" element={<Dashboard2 />} />
+        </Routes>
+        
+        
+
+
     </div>
   );
 }
