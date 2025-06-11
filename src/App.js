@@ -37,6 +37,7 @@ import { About } from "./Routing/About";
 import { Profile } from "./Routing/Profile";
 import { User } from "./Routing/User";
 import { Dashboard2 } from "./Routing/Dashboard2";
+import { Demo } from "./ErroBoundry/Demo";
 function App() {
   const flexStyle = {
     display: "flex",
@@ -143,6 +144,12 @@ function App() {
           <Route path='login' element={<h3>Login page</h3>}  />
         </Route> */}
       </Routes>
+
+
+
+
+      {/* Learn Error Boudary  */}
+      <Demo/>
     </div>
   );
 }
