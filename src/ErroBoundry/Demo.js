@@ -5,8 +5,8 @@ export const Demo = () => {
     <div>
        <ErrorBoundary fallback={<p>⚠️Something went wrong</p>}>
         <Card1 />
-        <Card2 />
       </ErrorBoundary>
+      <Card2 />
     </div>
   );
 };
