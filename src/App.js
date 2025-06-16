@@ -148,7 +148,7 @@ function App() {
 
 
 
-      {/* Learn Error Boudary  */}
+      {/* Learn Error Boudary  in ErrorBoundry folder*/}
       <Demo/>
     </div>
   );
